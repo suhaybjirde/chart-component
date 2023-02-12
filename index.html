@@ -4,10 +4,75 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>chart component</title>
 </head>
 <body>
+  <main class="main">
+    <div class="container">
+      <section class="header">
+        <div class="balance">
+          <p>My balance</p>
+          <p class="my-balance">$921.48</p>
+        </div>
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="">
+        </div>
+      </section>
+      <section class="analysis">
+        <h1 class="title">Spending-Last 7 days</h1>
+        <div class="chart">
+          <div class="chart-element">
+            <p class="line-info"></p>
+            <div class="mon line"></div>
+            <small class="label">mon</small>
+          </div>
+          <div class="chart-element">
+            <p class="line-info"></p>
+            <div class="tue line"></div>
+            <small class="label">tue</small>
+          </div>
+          <div class="chart-element">
+            <p class="line-info"></p>
+            <div class="wed line"></div>
+            <small class="label">wed</small>
+          </div>
+          <div class="chart-element">
+            <p class="line-info"></p>
+            <div class="thu line"></div>
+            <small class="label">thu</small>
+          </div>
+          <div class="chart-element">
+            <p class="line-info"></p>
+            <div class="fri line"></div>
+            <small class="label">fri</small>
+          </div>
+          <div class="chart-element">
+            <p class="line-info"></p>
+            <div class="sat line"></div>
+            <small class="label">sut</small>
+          </div>
+          <div class="chart-element">
+            <p class="line-info"></p>
+            <div class="sun line"></div>
+            <small class="label">sun</small>
+          </div>
+        </div>
+        <hr class="linebreak">
+        <div class="footer">
+          <div>
+            <p>Total this month</p>
+            <h2 class="total-balance">$478.33</h2>
+          </div>
+          <div class="benefit">
+            <h3>+2.4%</h3>
+            <p>from last month</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
   <script src="js/main.js"></script>
 </body>
 </html>
