@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+:root {
+    --clr-primary-100: hsl(10, 79%, 65%);
+    --clr-primary-200: hsl(186, 34%, 60%);
+
+    --clr-neutral-100: hsl(33, 100%, 98%);
+    --clr-neutral-200: hsl(27, 66%, 92%);
+    --clr-neutral-300: hsl(28, 10%, 53%);
+    --clr-neutral-400: hsl(25, 47%, 15%);
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--clr-neutral-200);
+}
+img {
+    width: 100%;
+}
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    width: 350px;
+    display: grid;
+    gap: 20px;
+}
+.container > section {
+    border-radius: 10px;
+}
+/* header */
+.header {
+    background-color: var(--clr-primary-100);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.balance > p:first-child {
+    color: var(--clr-neutral-200);
+    font-size: 0.75rem;
+}
+.my-balance {
+    color: var(--clr-neutral-100);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.logo {
+    width: 50px;
+}
+/* analysis */
+.analysis {
+    padding: 20px;
+    background-color: var(--clr-neutral-100);
+}
+.title {
+    color: var(--clr-neutral-400);
+    /* font-size: 1.4rem; */
+    margin: 10px 0;
+}
+.chart {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    height: 130px;
+    text-align: center;
+    color: var(--clr-neutral-300);
+    font-size: .9rem;
+    gap: 5px;
+}
+.mon {
+    height: 30px;
+    background-color: var(--clr-primary-100);
+}
+.tue {
+    height: 50px;
+    background-color: var(--clr-primary-100);
+}
+.wed {
+    height: 80px;
+    background-color: var(--clr-primary-200);
+}
+.thu {
+    height: 45px;
+    background-color: var(--clr-primary-100);
+}
+.fri {
+    height: 35px;
+    background-color: var(--clr-primary-100);
+}
+.sat {
+    height: 65px;
+    background-color: var(--clr-primary-100);
+}
+.sun {
+    height: 40px;
+    background-color: var(--clr-primary-100);
+}
+.line {
+    width: 35px;
+    border-radius: 5px;
+    transition: .4s;
+}
+.line-info {
+    height: 30px;
+    width: 45px;
+    transform: translateX(-11%);
+    border-radius: 5px;
+    background-color: var(--clr-neutral-400);
+    margin-bottom: 5px;
+    color: var(--clr-neutral-100);
+    font-size: 0.8rem;
+    display: none;
+}
+.linebreak {
+    height: 2px;
+    border: 1px solid var(--clr-neutral-200);
+    background-color: var(--clr-neutral-200);
+    margin: 25px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.footer p {
+    color: var(--clr-neutral-300);
+    font-size: 0.8rem;
+}
+.total-balance {
+    font-weight: 700;
+    color: var(--clr-neutral-400);
+    margin-top: 5px;
+}
+.benefit {
+    font-size: 0.9rem;
+    color: var(--clr-neutral-400);
+}
+
+.chart-element {
+    cursor: pointer;
+    width: 40px;
+    /* height: 100px;  this is funny i dont know why this is happing  every thing rotetes if i add height to it*/
+}
+.chart-element:hover > .line-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
